@@ -376,3 +376,111 @@ body{
     width: 12%;
     margin: 10px;
 }
+/* <!-- code for sidenav --> */
+.menulines{
+    cursor: pointer;
+}
+.sidenav{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: all 0.5s;
+}
+.sidenav a{
+    text-decoration: none;
+    font-size: .875rem;
+    color: #2e2c38;;
+    display: block;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+}
+.sidenav a h4{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.sidenav a svg{
+        width: 24px;
+        height: 24px;
+        line-height: 1rem;
+        margin-right: 10px;
+}
+.sidenav a:hover{
+    background-color: #f7f7f7;
+    color: #0092c3;
+}
+.closebtn{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 16;
+}
+.sidenav div a:nth-child(1){
+    display: block;
+    margin-top: -50px;
+}
+.spread{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* right side slide menu */
+
+.menulinesright{
+    cursor: pointer;
+}
+.sidenavright{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: all 0.5s;
+}
+.sidenavright a{
+    text-decoration: none;
+    font-size: .875rem;
+    color: #2e2c38;;
+    display: block;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+}
+.sidenavright a h4{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.sidenavright a svg{
+        width: 24px;
+        height: 24px;
+        line-height: 1rem;
+        margin-right: 10px;
+}
+.sidenavright a:hover{
+    background-color: #f7f7f7;
+    color: #0092c3;
+}
+.closebtnright{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 16;
+}
+.sidenavright div a:nth-child(1){
+    display: block;
+    margin-top: -50px;
+}
+.spread{
+    display: flex;
+    justify-content: space-between;
+}
