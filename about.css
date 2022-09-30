@@ -206,3 +206,6 @@ body{
     width: 12%;
     margin: 10px;
 }
+.wholediv{
+    cursor: pointer;
+}

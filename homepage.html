@@ -9,54 +9,143 @@
     <script src="https://kit.fontawesome.com/91e7347752.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-        <p>1st time customers save 25 % on SHOP.COM exclusive brands using code FIRST250FF. Max $ 25 discount. Terms Apply.</p>
-        <p><u>Click Here</u></p>
-    </div>
-    <div id="navbar">
-        <div id="nav-top">
-            <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="">
-            <input type="search" placeholder="Search SHOP.COM...">
-            <img src="https://img.shop.com/Image/header2013/usa-shopping-annuity-biotin-gummies-head-banner1664295986848.png" alt="">
+    <div class="mainheader">
+        <div id="header">
+            <p>1st time customers save 25 % on SHOP.COM exclusive brands using code FIRST250FF. Max $ 25 discount. Terms Apply.</p>
+            <p><u>Click Here</u></p>
         </div>
-        <div id="nav-bottom">
-            <div id="top">
-                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M3,3H21V5H3V3M3,7H21V9H3V7M3,11H21V13H3V11M3,15H21V17H3V15M3,19H21V21H3V19Z" />
-                </svg>
-                <p>Categories</p>
+        <div id="navbar">
+            <div id="nav-top">
+                <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="">
+                <input type="search" placeholder="Search SHOP.COM...">
+                <img src="https://img.shop.com/Image/header2013/usa-shopping-annuity-biotin-gummies-head-banner1664295986848.png" alt="">
             </div>
-            <div id="middle">
-                <p>Exclusive Brands</p>
-                <p>Stores</p>
-                <p>Deals</p>
-                <p>SHOP Travel</p>
-                <p>Departments</p>
-                <p>ShopBuddy</p>
-                <p>SHOP Local</p>
-            </div>
-            <div id="right">
-                <div>
-                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" />
-                    </svg>
-                    <p>Sign in</p>
+            <div id="nav-bottom">
+                <div id="top">
+                    <p class="menulines" onclick="openNav()"> &#9776; Categories</p>
                 </div>
-                <div>
-                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+<!-- code for sidenav -->
+                <div class="sidenav" id="mysidenav">
+                    <div>
+                        <a href="" class="spread">
+                            <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" alt="">
+                            SHOP.COM
+                        </a>
+                    <a href="javascript:void(0)" class="closebtn" onclick="colsenav()">
+                    &times;</a>
+
+                    </div>
+                    
+                    <a href="#"><h4>Categories</h4></a>
+                    <a href="#">Halloween</a>
+                    <a href="#">Featured Brand: Shark|Ninja</a>
+                    <a href="#">Newly Launched Products</a>
+                    <a href="#">Back to School</a>
+                    <a href="#">Gift Center</a>
+                    <a href="#">SHOP.COM Home Warranties</a>
+                    <a href="#">Onecart Exclusive Deals</a>
+                    <a href="#">Clothes > </a>
+                    <a href="#">Shoes > </a>
+                    <a href="">Beauty > </a>
+                    <a href="">Home > </a>
+                    <a href="">Electronics > </a>
+                    <a href="">Health & Nutrition > </a>
+                    <a href="">Jewelry > </a>
+                    <a href="">Kids > </a>
+                    <a href="">Pet Supplies > </a>
+                    <a href="">Food & Drink > </a>
+                    <a href="">Sports > </a>
+                    <a href="">Travel > </a>
+                    <a href="">SHOP Travel</a>
+                    <a href="">All Stores</a>
+                    <a href="">Exclusive Brands > </a>
+                    <hr>
+                    <a href=""><h4>Account</h4></a>
+                    <a href=""><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5M19.5,9.5L21.46,12H17V9.5M6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5M20,8H17V4H3C1.89,4 1,4.89 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8Z" />
+                    </svg>Track Orders</a>
+                    <a href=""><svg style="width:24px;height:24px" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M2 12C2 16.97 6.03 21 11 21C13.39 21 15.68 20.06 17.4 18.4L15.9 16.9C14.63 18.25 12.86 19 11 19C4.76 19 1.64 11.46 6.05 7.05C10.46 2.64 18 5.77 18 12H15L19 16H19.1L23 12H20C20 7.03 15.97 3 11 3C6.03 3 2 7.03 2 12Z" />
-                    </svg>
-                    <p>Orders</p>
+                    </svg>Reorder Items - updated</a>
+                    <a href=""><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M11,18H13V16H11V18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6Z" />
+                    </svg>Help</a>
+                    <hr>
+                    <a href=""><h4>Features</h4></a>
+                    <a href=""><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,5H21V7H7V5M7,13V11H21V13H7M4,4.5A1.5,1.5 0 0,1 5.5,6A1.5,1.5 0 0,1 4,7.5A1.5,1.5 0 0,1 2.5,6A1.5,1.5 0 0,1 4,4.5M4,10.5A1.5,1.5 0 0,1 5.5,12A1.5,1.5 0 0,1 4,13.5A1.5,1.5 0 0,1 2.5,12A1.5,1.5 0 0,1 4,10.5M7,19V17H21V19H7M4,16.5A1.5,1.5 0 0,1 5.5,18A1.5,1.5 0 0,1 4,19.5A1.5,1.5 0 0,1 2.5,18A1.5,1.5 0 0,1 4,16.5Z" />
+                    </svg>List Manager</a>
+                    <a href=""><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M9.06,1.93C7.17,1.92 5.33,3.74 6.17,6H3A2,2 0 0,0 1,8V10A1,1 0 0,0 2,11H11V8H13V11H22A1,1 0 0,0 23,10V8A2,2 0 0,0 21,6H17.83C19,2.73 14.6,0.42 12.57,3.24L12,4L11.43,3.22C10.8,2.33 9.93,1.94 9.06,1.93M9,4C9.89,4 10.34,5.08 9.71,5.71C9.08,6.34 8,5.89 8,5A1,1 0 0,1 9,4M15,4C15.89,4 16.34,5.08 15.71,5.71C15.08,6.34 14,5.89 14,5A1,1 0 0,1 15,4M2,12V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V12H13V20H11V12H2Z" />
+                    </svg>Gift Registry</a>
+                    <a href=""><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M13,3L14,3.06C16.8,1.79 19.23,1.64 20.5,2.92C21.5,3.93 21.58,5.67 20.92,7.72C21.61,9 22,10.45 22,12L21.95,13H9.08C9.45,15.28 11.06,17 13,17C14.31,17 15.47,16.21 16.2,15H21.5C20.25,18.5 16.92,21 13,21C11.72,21 10.5,20.73 9.41,20.25C6.5,21.68 3.89,21.9 2.57,20.56C1,18.96 1.68,15.57 4,12C4.93,10.54 6.14,9.06 7.57,7.65L8.38,6.88C7.21,7.57 5.71,8.62 4.19,10.17C5.03,6.08 8.66,3 13,3M13,7C11.21,7 9.69,8.47 9.18,10.5H16.82C16.31,8.47 14.79,7 13,7M20.06,4.06C19.4,3.39 18.22,3.35 16.74,3.81C18.22,4.5 19.5,5.56 20.41,6.89C20.73,5.65 20.64,4.65 20.06,4.06M3.89,20C4.72,20.84 6.4,20.69 8.44,19.76C6.59,18.67 5.17,16.94 4.47,14.88C3.27,17.15 3,19.07 3.89,20Z" />
+                    </svg> eGifts</a>
+                    <a href=""><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z" />
+                    </svg> Price Alerts</a>
+                    <a href=""><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12,5A2,2 0 0,1 14,7C14,7.24 13.96,7.47 13.88,7.69C17.95,8.5 21,11.91 21,16H3C3,11.91 6.05,8.5 10.12,7.69C10.04,7.47 10,7.24 10,7A2,2 0 0,1 12,5M22,19H2V17H22V19Z" />
+                    </svg> Shop Services</a>
+                    <a href=""><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
+                    </svg>Shop Local</a>
+                    <a href="">\<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12 2C13.1 2 14 2.9 14 4S13.1 6 12 6 10 5.1 10 4 10.9 2 12 2M15.9 8.1C15.5 7.7 14.8 7 13.5 7H11C8.2 7 6 4.8 6 2H4C4 5.2 6.1 7.8 9 8.7V22H11V16H13V22H15V10.1L19 14L20.4 12.6L15.9 8.1Z" />
+                    </svg>Shopbuddy</a>
+                    <a href=""><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12,13A5,5 0 0,1 7,8H9A3,3 0 0,0 12,11A3,3 0 0,0 15,8H17A5,5 0 0,1 12,13M12,3A3,3 0 0,1 15,6H9A3,3 0 0,1 12,3M19,6H17A5,5 0 0,0 12,1A5,5 0 0,0 7,6H5C3.89,6 3,6.89 3,8V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V8C21,6.89 20.1,6 19,6Z" />
+                    </svg>Trends</a>
+                    <a href=""><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M5.5,7A1.5,1.5 0 0,1 4,5.5A1.5,1.5 0 0,1 5.5,4A1.5,1.5 0 0,1 7,5.5A1.5,1.5 0 0,1 5.5,7M21.41,11.58L12.41,2.58C12.05,2.22 11.55,2 11,2H4C2.89,2 2,2.89 2,4V11C2,11.55 2.22,12.05 2.59,12.41L11.58,21.41C11.95,21.77 12.45,22 13,22C13.55,22 14.05,21.77 14.41,21.41L21.41,14.41C21.78,14.05 22,13.55 22,13C22,12.44 21.77,11.94 21.41,11.58Z" />
+                    </svg>Deals</a>
+                    <a href=""><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M5,11L6.5,6.5H17.5L19,11M17.5,16A1.5,1.5 0 0,1 16,14.5A1.5,1.5 0 0,1 17.5,13A1.5,1.5 0 0,1 19,14.5A1.5,1.5 0 0,1 17.5,16M6.5,16A1.5,1.5 0 0,1 5,14.5A1.5,1.5 0 0,1 6.5,13A1.5,1.5 0 0,1 8,14.5A1.5,1.5 0 0,1 6.5,16M18.92,6C18.72,5.42 18.16,5 17.5,5H6.5C5.84,5 5.28,5.42 5.08,6L3,12V20A1,1 0 0,0 4,21H5A1,1 0 0,0 6,20V19H18V20A1,1 0 0,0 19,21H20A1,1 0 0,0 21,20V12L18.92,6Z" />
+                    </svg>Carsaver</a>
+                    <a href=""><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                    </svg>Best of Web</a>
+                    <a href=""><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19,8C19.56,8 20,8.43 20,9A1,1 0 0,1 19,10C18.43,10 18,9.55 18,9C18,8.43 18.43,8 19,8M2,2V11C2,13.96 4.19,16.5 7.14,16.91C7.76,19.92 10.42,22 13.5,22A6.5,6.5 0 0,0 20,15.5V11.81C21.16,11.39 22,10.29 22,9A3,3 0 0,0 19,6A3,3 0 0,0 16,9C16,10.29 16.84,11.4 18,11.81V15.41C18,17.91 16,19.91 13.5,19.91C11.5,19.91 9.82,18.7 9.22,16.9C12,16.3 14,13.8 14,11V2H10V5H12V11A4,4 0 0,1 8,15A4,4 0 0,1 4,11V5H6V2H2Z" />
+                    </svg>Nutri-Physical</a>
+                    
                 </div>
-                <div>
-                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" />
-                    </svg>
-                    <p>Cart</p>
-                </div> 
+
+
+                <div id="middle">
+                    <p>Exclusive Brands</p>
+                    <p>Stores</p>
+                    <p>Deals</p>
+                    <p>SHOP Travel</p>
+                    <p>Departments</p>
+                    <p>ShopBuddy</p>
+                    <p>SHOP Local</p>
+                </div>
+                <div id="right">
+                    <div>
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" />
+                        </svg>
+                        <p>Sign in</p>
+                    </div>
+                    <div>
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M2 12C2 16.97 6.03 21 11 21C13.39 21 15.68 20.06 17.4 18.4L15.9 16.9C14.63 18.25 12.86 19 11 19C4.76 19 1.64 11.46 6.05 7.05C10.46 2.64 18 5.77 18 12H15L19 16H19.1L23 12H20C20 7.03 15.97 3 11 3C6.03 3 2 7.03 2 12Z" />
+                        </svg>
+                        <p>Orders</p>
+                    </div>
+                    <div>
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" />
+                        </svg>
+                        <p>Cart</p>
+                    </div> 
+                </div>
             </div>
         </div>
+
     </div>
+    
     <div id="belownav">
         <p>Your Shop Consultant is<b>SHOP.COM</b></p>
         <p>Earn up to 50% <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt=""> Cashback on eligible purchases.<u>Learn More</u> </p>
@@ -576,7 +665,7 @@
                 </div>
             </div>
         </div>
-        <div class="middle">
+        <div class="middle1">
             <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners.</p>
             <p>Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.</p>
             <p><u>Privacy Policy</u>  | <u>Terms of Use</u> | <u>Advertising Disclosure</u> | <u>Return Policy</u> | <u>Shipping Information</u></p>
@@ -600,3 +689,11 @@
      </div>
 </body>
 </html>
+<script>
+    const openNav=()=>{
+        document.getElementById("mysidenav").style.width="400px";
+    }
+    const colsenav=()=>{
+        document.getElementById("mysidenav").style.width="0";
+    }
+</script>

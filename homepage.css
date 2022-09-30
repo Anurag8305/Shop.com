@@ -1,6 +1,10 @@
 body{
     background-color: #f7f7f7;
 }
+.mainheader{
+    position: fixed;
+    width: 100%;
+}
 #header{
     display: flex;
     background-color: #202340;
@@ -10,6 +14,7 @@ body{
     margin: none;
     text-align: center;
     padding-bottom: 20px;
+    
 }
 #navbar{
     background-color: #f0f1f7;
@@ -37,13 +42,13 @@ body{
     justify-content: space-between;
     
 }
-#middle{
+#middle1{
     width: 60%;
     display: flex;
     justify-content: space-evenly;
     color: grey;
 }
-#middle>p{
+#middle1>p{
     display: flex;
     justify-content: space-evenly;
 }
@@ -65,6 +70,7 @@ body{
     height: 30px;
     margin-top: 5px;
     padding-bottom: 10px;
+    padding-top: 172px;
 }
 #belownav img{
     width: 2%;
@@ -77,7 +83,10 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 5px;
-    padding-top: 150px;
+    background-color: #ffffff;
+}
+.middle p{
+    font-size: 20px;
 }
 .middle img{
     width: 2%;
@@ -90,6 +99,7 @@ body{
     margin-left: 30px;
     width: 10%;
     height: 40px; 
+    margin-top: 12px;
 }
 #halloween img{
     width: 100%;
@@ -429,7 +439,7 @@ body{
     padding: 15px;
     color: white;
 }
-.middle{
+.middle1{
     background-color: #f0f1f7;
     font-size: 12px
 }
@@ -450,4 +460,59 @@ body{
 .bottom2 img{
     width: 12%;
     margin: 10px;
+}
+
+
+/* <!-- code for sidenav --> */
+.menulines{
+    cursor: pointer;
+}
+.sidenav{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: all 0.5s;
+}
+.sidenav a{
+    text-decoration: none;
+    font-size: .875rem;
+    color: #2e2c38;;
+    display: block;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+}
+.sidenav a h4{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.sidenav a svg{
+        width: 24px;
+        height: 24px;
+        line-height: 1rem;
+        margin-right: 10px;
+}
+.sidenav a:hover{
+    background-color: #f7f7f7;
+    color: #0092c3;
+}
+.closebtn{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 16;
+}
+.sidenav div a:nth-child(1){
+    display: block;
+    margin-top: -50px;
+}
+.spread{
+    display: flex;
+    justify-content: space-between;
 }
