@@ -12,7 +12,7 @@
     <div class="mainheader">
         <div id="header">
             <p>1st time customers save 25 % on SHOP.COM exclusive brands using code FIRST250FF. Max $ 25 discount. Terms Apply.</p>
-            <p><u>Click Here</u></p>
+            <a href="terms.html"><p><u>Click Here</u></p></a>
         </div>
         <div id="navbar">
             <div id="nav-top">
@@ -44,7 +44,7 @@
                     <a href="#">Gift Center</a>
                     <a href="#">SHOP.COM Home Warranties</a>
                     <a href="#">Onecart Exclusive Deals</a>
-                    <a href="#">Clothes > </a>
+                    <a href="#"> <p class="menulines" onclick="openNavclothes()">Clothes ></p>  </a>
                     <a href="#">Shoes > </a>
                     <a href="">Beauty > </a>
                     <a href="">Home > </a>
@@ -110,6 +110,40 @@
                     </svg>Nutri-Physical</a>
                     
                 </div>
+                <div class="sidenavclothes" id="mysidenavclothes">
+                    <div>
+                        <a href="" class="spread">
+                    <a href="javascript:void(0)" class="closebtnclothes" onclick="colsenavclothes()">
+                    &times;</a>
+                    
+
+                    </div>
+                    <a href="#"><h4> <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M20,10V14H11L14.5,17.5L12.08,19.92L4.16,12L12.08,4.08L14.5,6.5L11,10H20Z" />
+                    </svg> Back to Main</h4></a>
+                    <hr>
+                    <a href="#"><b>Shop All Clothes</b><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+                    </svg></a>
+                    <a href="womens.html">Women's Clothing<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+                    </svg></a>
+                    <a href="mens.html">Men's Clothing<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+</svg></a>
+                    <a href="#">Accessories<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+</svg></a>
+                    <a href="#">Girl's Clothing<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+</svg></a>
+                    <a href="#">Boys's Clothing<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+</svg></a>
+                    <a href="">Baby & Toddler Clothing<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
+</svg></a>
+                </div>
 
 
                 <div id="middlenav">
@@ -138,7 +172,8 @@
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="currentColor" d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" />
                         </svg>
-                        <p>Cart</p>
+                        <a href="carts.html"><p>Carts</p></a>
+
                     </div> 
                 </div>
                 <div class="sidenavright" id="mysidenavright">
@@ -238,7 +273,7 @@
             <div>
                 <div>
                     <p>Sign in for the best experience</p>
-                    <button>Sign In</button>
+                    <button><a href="signin.html">Sign In</a></button>
                 </div>
                 <img src="https://img.shop.com/Image/homepage/sa-usa-103715-pain-relief-spray-preorder-600x600-img1663769923041.jpg" alt="">
             </div>
@@ -765,6 +800,13 @@
     }
     const colsenavright=()=>{
         document.getElementById("mysidenavright").style.width="0";
+    }
+
+    const openNavclothes=()=>{
+        document.getElementById("mysidenavclothes").style.width="400px";
+    }
+    const colsenavclothes=()=>{
+        document.getElementById("mysidenavclothes").style.width="0";
     }
 
     let calcScrollValue=()=>{
